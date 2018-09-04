@@ -1,0 +1,333 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      Daily Facebook Posts Design - SocialDesigns
+    </title>
+    <meta name="description" content="This description shows when you share a link to your page on Facebook or Twitter."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700" rel="stylesheet"/>
+  </head>
+  <body>
+    <div style="font-family:&#x27;Open Sans&#x27;, Arial, serif;font-size:14px">
+      <div>
+        <header class="header" style="color:rgba(40,40,40,1);font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logo" style="font-weight:400">
+              SocialDesigns
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <div class="header__navCtas">
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-color:rgba(255,255,255,1)">
+          <div class="wr heroWr heroWr--left">
+            <div class="heroWrapper heroWrapper--left heroWrapper--pd">
+              <h1 class="hero__title" style="color:rgba(40,40,40,1);font-weight:400;font-family:&#x27;Montserrat&#x27;, sans-serif">
+                Quality Facebook Posts Design
+              </h1>
+              <h2 class="hero__subtitle" style="color:rgba(40,40,40,1);font-weight:400">
+                Simple monthly flat rate
+                (2 posts per day for $15)
+              </h2>
+              <div class="hero__ctas">
+                <a href="/login" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(70,107,174,1)">
+                  Get Started
+                </a>
+              </div>
+            </div>
+            <div class="pd pd--right">
+              <img src="assets/4qqszuc9.png?h=500&amp;fix=crop" class="pd__imgBox pd__imgBox--transparent"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:rgba(70,107,174,1)">
+          <div class="wr" style="padding:40px 0">
+            <h2 class="section__title center" style="color:#fff;font-weight:400;font-family:&#x27;Montserrat&#x27;, sans-serif">
+              Stunning artworks from professional designers
+            </h2>
+            <h3 class="section__subtitle center" style="color:#fff;font-weight:400">
+              Delivered daily and ready to post on your Facebook page
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(255,255,255,1)">
+          <div class="wr">
+            <div class="features features--trio features--center">
+              <div class="feature">
+                <h3 class="feature__title" style="color:rgba(40,40,40,1);font-weight:600">
+                  Your personal designer
+                </h3>
+                <p class="feature__description" style="color:rgba(40,40,40,1);font-weight:400">
+                  Your are assigned a professional designer that works with you daily to develop your visual identity, and create quality graphics that will engage your followers.
+                </p>
+              </div>
+              <div class="feature">
+                <h3 class="feature__title" style="color:rgba(40,40,40,1);font-weight:600">
+                  Unlimited revisions
+                </h3>
+                <p class="feature__description" style="color:rgba(40,40,40,1);font-weight:400">
+                  We won&#x27;t stop revising until you are satisfied with the result.
+                </p>
+              </div>
+              <div class="feature">
+                <h3 class="feature__title" style="color:rgba(40,40,40,1);font-weight:600">
+                  Designs ready to go live
+                </h3>
+                <p class="feature__description" style="color:rgba(40,40,40,1);font-weight:400">
+                  We deliver your graphics on-time and ready to post on Facebook. On request, we even handle creating the post on your Facebook page for you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(70,107,174,1)">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#fff;font-weight:400;font-family:&#x27;Montserrat&#x27;, sans-serif">
+              Stop wasting time in waiting for quotes and proposals 
+            </h2>
+            <h3 class="section__subtitle center" style="color:#fff;font-weight:400">
+              Get your own dedicated designer that delivers 2 posts daily, for just $7.50/post
+            </h3>
+            <img src="https://assets.landen.co/1/wall_post_83ul.svg" class="media media--image" srcSet="https://assets.landen.co/1/wall_post_83ul.svg 2x"/>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:rgba(255,255,255,1)">
+          <div class="wr">
+            <h2 class="section__title center" style="color:rgba(40,40,40,1);font-weight:400;font-family:&#x27;Montserrat&#x27;, sans-serif">
+              Flat Monthly Rate
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(40,40,40,1);font-weight:400">
+              No contracts - Cancel anytime
+            </h3>
+            <div class="pricing">
+              <div class="pricingTiers">
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:rgba(40,40,40,1);font-weight:600">
+                      Premium
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(40,40,40,1);font-weight:400">
+                      Most Popular
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:rgba(40,40,40,1);font-weight:400">
+                        $395
+                      </span>
+                      <span class="interval" style="color:rgba(40,40,40,1);font-weight:400">
+                        / mo
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         2 posts per day
+                      </li>
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         Your own personal designer
+                      </li>
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         Delivered on-time, ready to go
+                      </li>
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         7-days a week support
+                      </li>
+                    </ul>
+                    <a href="/start" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
+                      Sign Up
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:rgba(40,40,40,1);font-weight:600">
+                      Enterprise
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(40,40,40,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:rgba(40,40,40,1);font-weight:400">
+                        $895
+                      </span>
+                      <span class="interval" style="color:rgba(40,40,40,1);font-weight:400">
+                        / month
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         8 posts per day
+                      </li>
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         2 hrs design session per week 
+                      </li>
+                      <li style="color:rgba(40,40,40,1);font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         Everything in Premium
+                      </li>
+                    </ul>
+                    <a href="/start" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
+                      Sign Up
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:rgba(70,107,174,1)">
+          <div class="wr">
+            <div class="footer" style="color:#fff;font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  © 2018 SocialDesigns
+                </span>
+              </div>
+              <nav class="footer__linkRow">
+                <a href="">
+                  Contact us
+                </a>
+              </nav>
+            </div>
+          </div>
+        </footer>
+        <div style="position:relative">
+          <a href="https://www.landen.co/?utm_source=litebadge" class="footerBadge footerBadge--production">
+            Built with 
+            <span>
+              Landen
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
