@@ -1,0 +1,129 @@
+<html lang="">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>
+    My Landing Page
+  </title>
+  <meta name="description" content="This description shows when you share a link to your page on Facebook or Twitter." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700" rel="stylesheet" />
+</head>
+
+<body>
+  <div style="font-family:&#x27;Open Sans&#x27;, Arial, serif;font-size:14px">
+    <div>
+      <header class="header" style="color:rgba(40,40,40,1);font-weight:400">
+        <div class="wr">
+          <a id="headerLogo" href="/" class="header__logo" style="font-weight:400">
+            SocialDesigns
+          </a>
+          <nav id="headerNav" class="header__nav">
+            <div class="header__navCtas">
+            </div>
+          </nav>
+          <nav id="headerMenu" class="header__nav header__nav--hidden">
+            <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
+              Menu
+            </button>
+          </nav>
+          <nav id="headerDrawer" class="headerMenu">
+            <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+            </div>
+            <ul class="headerMenu__links">
+            </ul>
+            <button id="headerDrawerClose" class="headerMenu__close btn">
+              Close
+            </button>
+          </nav>
+        </div>
+        <script>
+          (function () {
+            var buffer = 10;
+            var margin = 60 + 40 + buffer;
+            // button
+            var button = document.getElementById('headerMenuButton');
+            var buttonWrapper = document.getElementById('headerMenu');
+            // drawer
+            var drawer = document.getElementById('headerDrawer');
+            var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+            var drawerClose = document.getElementById('headerDrawerClose');
+            // header UI
+            var logo = document.getElementById('headerLogo');
+            var nav = document.getElementById('headerNav');
+            var logoWidth = logo.offsetWidth;
+            var navWidth = nav.offsetWidth;
+
+            var determineVisibility = function () {
+              var parent = window.innerWidth;
+              if (logoWidth + navWidth > parent - margin) {
+                nav.classList.add('header__nav--hidden');
+                buttonWrapper.classList.add('headerMenu--visible');
+              } else {
+                nav.classList.remove('header__nav--hidden');
+                buttonWrapper.classList.remove('headerMenu--visible');
+              }
+            };
+
+            var showDrawer = function () {
+              drawer.classList.add('headerMenu--visible');
+            };
+
+            var hideDrawer = function () {
+              drawer.classList.remove('headerMenu--visible');
+            };
+
+            button.onclick = showDrawer;
+            drawerBackdrop.onclick = hideDrawer;
+            drawerClose.onclick = hideDrawer;
+
+            window.addEventListener('resize', determineVisibility);
+            determineVisibility();
+          })();
+        </script>
+      </header>
+    </div>
+    <div>
+      <div class="section section--logos" style="background-color:#fff">
+        <div class="typeform-widget" data-url="https://instantwebsite.typeform.com/to/jWsBap" data-transparency="50" data-hide-headers=true
+          data-hide-footer=true style="width: 100%; height: 500px;"></div>
+        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+        <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by
+          <a href="https://admin.typeform.com/signup?utm_campaign=jWsBap&utm_source=typeform.com-12528630-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
+            style="color: #999" target="_blank">Typeform</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <footer class="section section--footer" style="background-color:rgba(70,107,174,1)">
+        <div class="wr">
+          <div class="footer" style="color:#fff;font-weight:400">
+            <div class="footer__primary">
+              <span>
+                © 2018 SocialDesigns
+              </span>
+            </div>
+            <nav class="footer__linkRow">
+              <a href="">
+                Contact us
+              </a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <div style="position:relative">
+        <a href="https://www.landen.co/?utm_source=litebadge" class="footerBadge footerBadge--production">
+          Built with
+          <span>
+            Landen
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
