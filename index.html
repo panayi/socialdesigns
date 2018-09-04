@@ -54,7 +54,7 @@
               var nav = document.getElementById('headerNav');
               var logoWidth = logo.offsetWidth;
               var navWidth = nav.offsetWidth;
-            
+
               var determineVisibility = function() {
                 var parent = window.innerWidth;
                 if (logoWidth + navWidth > parent - margin) {
@@ -65,19 +65,19 @@
                   buttonWrapper.classList.remove('headerMenu--visible');
                 }
               };
-            
+
               var showDrawer = function() {
                 drawer.classList.add('headerMenu--visible');
               };
-            
+
               var hideDrawer = function() {
                 drawer.classList.remove('headerMenu--visible');
               };
-            
+
               button.onclick = showDrawer;
               drawerBackdrop.onclick = hideDrawer;
               drawerClose.onclick = hideDrawer;
-            
+
               window.addEventListener('resize', determineVisibility);
               determineVisibility();
             })();
@@ -96,7 +96,7 @@
                 (2 posts per day for $15)
               </h2>
               <div class="hero__ctas">
-                <a href="/login" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(70,107,174,1)">
+                <a href="/sign-up" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(70,107,174,1)">
                   Get Started
                 </a>
               </div>
@@ -155,7 +155,7 @@
         <div class="section" style="background-color:rgba(70,107,174,1)">
           <div class="wr">
             <h2 class="section__title center" style="color:#fff;font-weight:400;font-family:&#x27;Montserrat&#x27;, sans-serif">
-              Stop wasting time in waiting for quotes and proposals 
+              Stop wasting time in waiting for quotes and proposals
             </h2>
             <h3 class="section__subtitle center" style="color:#fff;font-weight:400">
               Get your own dedicated designer that delivers 2 posts daily, for just $7.50/post
@@ -237,7 +237,7 @@
                          7-days a week support
                       </li>
                     </ul>
-                    <a href="/start" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
+                    <a href="/sign-up" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
                       Sign Up
                     </a>
                   </div>
@@ -278,7 +278,7 @@
                             </g>
                           </g>
                         </svg>
-                         2 hrs design session per week 
+                         2 hrs design session per week
                       </li>
                       <li style="color:rgba(40,40,40,1);font-weight:400">
                         <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +292,7 @@
                          Everything in Premium
                       </li>
                     </ul>
-                    <a href="/start" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
+                    <a href="/sign-up" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(70,107,174,1)">
                       Sign Up
                     </a>
                   </div>
@@ -312,21 +312,13 @@
                 </span>
               </div>
               <nav class="footer__linkRow">
-                <a href="">
+                <a href="mailto:hello@socialdesigns.co">
                   Contact us
                 </a>
               </nav>
             </div>
           </div>
         </footer>
-        <div style="position:relative">
-          <a href="https://www.landen.co/?utm_source=litebadge" class="footerBadge footerBadge--production">
-            Built with 
-            <span>
-              Landen
-            </span>
-          </a>
-        </div>
       </div>
     </div>
   </body>
